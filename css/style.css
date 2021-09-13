@@ -129,8 +129,9 @@ section{
                     color: var(--Light-Gray);
                     margin-bottom: 1.5rem;
                 }
-                    input[type="button"]{
+                    a.sign-up{
                         width:100%;
+                        text-align: center;
                         font-family:Karla700;
                         padding: 13px;
                         font-size: 1.1rem;
@@ -141,8 +142,10 @@ section{
                         border-radius: 5px;
                         cursor: pointer;
                         transition: opacity .2s linear;
+                        text-decoration: none;
+                        display: block;
                     }
-                    input[type="button"]:hover{
+                    a.sign-up:hover{
                         opacity: .8;
                         outline: 1px solid olive;
                     }
