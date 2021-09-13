@@ -47,8 +47,8 @@ main{
     border-radius:10px; 
     grid-template-areas: " community community"
                          " subscription why ";
-                         box-shadow:  -1px 5px 71px -60px #030303,
-                         1px -1px 71px -60px #000000;
+   box-shadow:  0 10px 76px -75px #030303,
+                0 -10px 76px -75px #000000;
 
 
 }
