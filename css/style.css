@@ -1,0 +1,193 @@
+:root{
+    --Cyan: hsl(179, 62%, 43%);
+    --Bright-Yellow: hsl(71, 73%, 54%);
+    --Light-Gray: hsl(204, 43%, 93%);
+    --Grayish-Blue: hsl(218, 22%, 67%);
+    --Cyan-light: hsla(179, 62%, 43%, .8);
+
+
+    font-size: 16px;
+}
+
+
+@font-face{
+    font-family:Karla400;
+    src:url("../fonts/Karla400.ttf");
+}
+
+@font-face{
+    font-family:Karla700;
+    src:url("../fonts/Karla700.ttf");
+}
+
+
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    font-weight: normal;
+}
+
+body{
+    min-height:100vh;
+    background-color: var(--Light-Gray);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin:1rem;
+    
+}
+
+main{
+    display: -ms-grid;
+    display: grid;
+    width:40rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    grid-template-areas: " community community"
+                         " subscription why ";
+
+}
+section{
+    height:15rem;
+    padding:35px 46px 0 35px;
+}
+
+            .join-community{
+                grid-area:community;
+                background-color: white;
+                border-radius:10px 10px 0 0; 
+                height:13rem;
+            }
+                    
+                .join-community > h1{
+                    font-family:Karla700;
+                    color: var(--Cyan);
+                    margin-bottom: 18px;
+                }
+
+                .join-community > h2{
+                    font-family:Karla700;
+                    color: var(--Bright-Yellow);
+                    font-size: 1.1rem;
+                    margin-bottom:14px;
+                }
+
+                .join-community > p{
+                    font-family:Karla400;
+                    color:var(--Grayish-Blue);
+                    line-height: 1.6;
+                    
+                    
+                    
+                }
+
+
+
+        
+
+
+
+
+        .monthtly-subscription{
+            grid-area: subscription;
+            background-color: var(--Cyan);
+            border-radius: 0 0 0 10px;
+        }
+
+
+                .monthtly-subscription > h2{
+                    font-family:Karla700;
+                    color: var(--Light-Gray);
+                    font-size: 1.2rem;
+                    margin-bottom: 20px;
+                }
+
+
+                .monthtly-subscription > div{
+                    color: var(--Light-Gray);
+                    font-size: 1.7rem;
+                    font-family:Karla700;
+                    margin-bottom: .8rem;
+                    
+                }
+
+
+                .monthtly-subscription > div > span{
+                    font-size: 1rem;
+                    font-family:Karla400;
+                    vertical-align: middle;
+                    height:1.5rem;
+                    display: inline-block;
+                    margin-left: 4px;
+                    opacity: .7; 
+                }
+
+
+                .monthtly-subscription > p{
+                    font-family:Karla400;
+                    color: var(--Light-Gray);
+                    margin-bottom: 1.5rem;
+                }
+                    input[type="button"]{
+                        width:100%;
+                        font-family:Karla700;
+                        padding: 13px;
+                        font-size: 1.1rem;
+                        margin-bottom: 5px;
+                        background-color: var(--Bright-Yellow);
+                        color: var(--Light-Gray);
+                        border:none;
+                        border-radius: 5px;
+                        cursor: pointer;
+                        transition: opacity .2s linear;
+                    }
+                    input[type="button"]:hover{
+                        opacity: .8;
+                        outline: 1px solid olive;
+                    }
+
+                
+
+            .Why-us{
+                grid-area:why;
+                background-color:var(--Cyan-light) ;
+                border-radius: 0 0 10px 0;
+                color: var(--Light-Gray);
+            }
+                .Why-us > h2{
+                    font-family:Karla700;
+                    font-size: 1.3rem;
+                    opacity: 1.6;
+                    margin-bottom: 1rem;
+                    
+                }
+                .Why-us > ul{
+                    list-style: none;
+                    font-family:Karla400;
+                    font-size: 14px;
+                    opacity: .8;
+
+                }
+                li{
+                    line-height: 1.4;
+                }
+               
+
+
+
+
+
+
+
+
+
+
+footer{
+    position: absolute;
+    top:0;
+}
+
+
+.attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }

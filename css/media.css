@@ -1,0 +1,30 @@
+@media (max-width:600px){
+    body{
+        margin:5rem 2rem;
+    }
+    main{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+        grid-template-areas: "community"
+                             "subscription" 
+                                "why"    ;
+
+     
+    }
+    section{
+        padding:25px 25px 25px 25px;
+        height: -webkit-fit-content !important;
+        height: fit-content !important;
+        height: -moz-fit-content !important;
+    }
+   
+    .monthtly-subscription{
+        border-radius: 0;
+    }
+    .Why-us{
+        border-radius: 0 0 10px 10px;
+    }
+    footer{
+        display:none;
+    }
+}
