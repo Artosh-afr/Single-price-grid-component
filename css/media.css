@@ -1,6 +1,6 @@
 @media (max-width:650px){
-    body{
-        margin:5rem 2rem;
+   body{
+        margin:0 2rem;
     }
     main{
         grid-template-columns: 1fr;
